@@ -8,6 +8,7 @@ const mongouri=process.env.MONGODB_URI;
 // mongoose.connect("mongodb://127.0.0.1:27017/loginInfo");
 
 mongoose.connect(mongouri,{
+  serverSelectionTimeoutMS: 30000,
 
 }).then(() => {
   console.log('Connected to MongoDB Atlas');
