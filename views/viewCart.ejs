@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CART</title>
+    <link rel="stylesheet" href="/stylesheets/viewCart.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="inventory">
+        <table>
+          <thead>
+            <tr id="useName">
+              <th colspan="3"><%= client.name %>'s Database</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="titles">
+              <th>Sr.No</th>
+              <th>Books</th>
+              <th>Authors</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><%= client.book1 %></td>
+              <td><%= client.author1 %></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><%= client.book2 %></td>
+              <td><%= client.author2 %></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><%= client.book3 %></td>
+              <td><%= client.author3 %></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><%= client.book4 %></td>
+              <td><%= client.author4 %></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="/javascripts/viewCart.js"></script>
+  </body>
+</html>

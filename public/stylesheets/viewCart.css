@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+html,body{
+ width:100%;
+ height:100%;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+
+}
+.inventory{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:40%;
+    height:80%;
+  
+
+}
+table {
+    width: 80%;
+    height: 80%;
+    border-collapse: collapse;
+  }
+ 
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
+  #titles th{
+    padding:1px;
+  }
+
+  #useName th {
+    background-color: lightgray;
+    padding: 15px 0px;
+  }
+ 

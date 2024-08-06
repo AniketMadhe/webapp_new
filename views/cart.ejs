@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/cart.css">
+</head>
+<body>
+ 
+
+
+   <div class="main">
+
+    <div class="cart">
+       <h2 id="CName"><%=userSession%></h2>
+        <table>
+            <tr>
+                <th class="sr-no">Sr.No</th>
+                <th class="head">Books</th>
+                <th class="head">Author</th>
+            </tr>
+            <tr>
+                <td>
+                    1
+                </td>
+                <td id="B1Name">
+                    <%=bookKanaam%>
+                </td>
+                <td id="A1Name">
+                <%=authorKanaam%>
+                       
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    2
+                </td>
+                <td id="B2Name">
+                    <%=bookKanaam2%>
+                </td>
+                <td id="A2Name">
+                    <%=authorKanaam2%>
+                       
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    3
+                </td>
+                <td id="B3Name">
+                    <%=bookKanaam3%>
+                </td>
+                <td id="A3Name">
+                    <%=authorKanaam3%>
+                       
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    4
+                </td>
+                <td id="B4Name">
+                    <%=bookKanaam4%>
+                </td>
+                <td id="A4Name">
+                    <%=authorKanaam4%>
+                       
+                </td>
+            </tr>
+
+        </table>
+     
+        <div class="add" onclick="handleClick()">
+           <h4> ADD</h4> <img src="/images/AddButton.webp" alt="" >
+
+        </div>
+        
+
+
+    </div>
+           <div class="cartForm">
+    <form id="cartFormSubmit" action="/cart" method="post">
+
+        <input id="nameOfuser" name="nameU" type="text" placeholder="username" value="">
+        <input id="nameOfbook1" name="nameB1" type="text" placeholder="bookname" value="">
+        <input id="nameOfauthor1" name="nameA1" type="text" placeholder="authorname" value="">
+        <input id="nameOfbook2" name="nameB2" type="text" placeholder="bookname" value="">
+        <input id="nameOfauthor2" name="nameA2" type="text" placeholder="authorname" value="">
+        <input id="nameOfbook3" name="nameB3" type="text" placeholder="bookname" value="">
+        <input id="nameOfauthor3" name="nameA3" type="text" placeholder="authorname" value="">
+        <input id="nameOfbook4" name="nameB4" type="text" placeholder="bookname" value="">
+        <input id="nameOfauthor4" name="nameA4" type="text" placeholder="authorname" value="">
+        <button type="submit">submit</button>
+      </form>
+            </div>
+    
+   </div>
+      
+
+    
+
+    <script src="/javascripts/cart.js"></script>
+</body>
+</html>
