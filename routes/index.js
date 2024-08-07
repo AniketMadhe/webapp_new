@@ -77,7 +77,7 @@ router.post("/login", async function(req, res) {
       }
     }
   } catch (error) {
-    res.redirect("/login");
+    res.redirect("/signup");
   }
 });
 
