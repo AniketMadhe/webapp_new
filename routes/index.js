@@ -63,7 +63,7 @@ router.post("/login", async function(req, res) {
 
     if (!check) {
       res.send("User not found!");
-      res.redirect("/signup");
+      
     } else {
       const isPassCorrect = await bcrypt.compare(req.body.password, check.password);
 
